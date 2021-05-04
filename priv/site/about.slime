@@ -1,0 +1,10 @@
+---
+layout: _includes/layout.slime
+current: about
+---
+
+h1.title About 
+
+.main
+  p About.
+  = include(@env, "_includes/footer.slime")

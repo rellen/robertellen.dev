@@ -12,3 +12,4 @@ erl_crash.dump
 .direnv
 .nix-hex
 .nix-mix
+_site
