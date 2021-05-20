@@ -27,6 +27,8 @@ jobs:
 
       - run: MIX_ENV=site mix deps.get
 
+      - run: npm install --prefix assets
+
       - run: MIX_ENV=site mix still.compile
 
       - uses: peaceiris/actions-gh-pages@v3
