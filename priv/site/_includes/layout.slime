@@ -10,6 +10,6 @@ html
     = link_to_css "css/theme.css", media: "all"
   body
     nav
-      = link @env, "Home", to: "/", class: if assigns[:current] != "home", do: "opacity-60"
-      = link @env, "About", to: "/about", class: if assigns[:current] != "about", do: "opacity-60"
+      = link @env, "Home", to: "/", class: if assigns[:current] != "home", do: "opacity-50"
+      = link @env, "About", to: "/about", class: if assigns[:current] != "about", do: "opacity-50"
     = @children
