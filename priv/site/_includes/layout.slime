@@ -4,7 +4,7 @@ title: "Still"
 doctype html
 html
   head
-    title Still
+    title robertellen.dev
     meta charset="UTF-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     = link_to_css "css/theme.css", media: "all"
