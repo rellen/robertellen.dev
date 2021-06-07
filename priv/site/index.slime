@@ -3,8 +3,7 @@ layout: _includes/layout.slime
 current: home
 ---
 
-h1.title Site 
+h1.title Robert Ellen 
 
 .main
-  p Site.
-  = include(@env, "_includes/footer.slime")
+  = include(@env, "_includes/social.slime")

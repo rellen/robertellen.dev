@@ -1,6 +1,6 @@
-footer
-  p Relevant links:
-  nav
-    ul
-      li = link @env, "Still Docs", to: "https://hexdocs.pm/still/"
-      li = link @env, "Still Github", to: "https://github.com/still-ex/still"
+footer.flex.justify-center
+      p
+        | Built using
+        |  #{link @env, "Still", to: "https://github.com/still-ex/still", class: "opacity-60 no-underline hover:underline"}
+        |  and
+        |  #{link @env, "TailwindCSS", to: "https://tailwindcss.com", class: "opacity-60 no-underline hover:underline"}

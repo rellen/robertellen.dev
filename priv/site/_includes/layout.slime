@@ -4,12 +4,13 @@ title: "Still"
 doctype html
 html
   head
-    title robertellen.dev
+    title = assigns[:current] <> " | robertellen.dev"
     meta charset="UTF-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     = link_to_css "css/theme.css", media: "all"
-  body
-    nav
-      = link @env, "Home", to: "/", class: if assigns[:current] != "home", do: "opacity-50"
-      = link @env, "About", to: "/about", class: if assigns[:current] != "about", do: "opacity-50"
+  body.p-4
+    nav.flex.justify-center.gap-x-2
+      = link @env, "Home", to: "/", class: "no-underline hover:underline #{if assigns[:current] != "home", do: "opacity-60"}"
+      = link @env, "About", to: "/about", class: "no-underline hover:underline #{if assigns[:current] != "about", do: "opacity-60"}"
     = @children
+    = include(@env, "_includes/footer.slime")
