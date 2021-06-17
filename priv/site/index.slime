@@ -3,7 +3,8 @@ layout: _includes/layout.slime
 current: home
 ---
 
-h1.title Robert Ellen 
+h1.title BEAM Blog 
+p.text-center A tech blog about Elixir, Erlang, and BEAM technology by Robert Ellen 
 
 .main
   = include(@env, "_includes/social.slime")

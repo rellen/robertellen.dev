@@ -4,7 +4,8 @@
 
 :root {
   --c-black: #222222;
-  --c-white: #edd1b0;
+  /* --c-white: #edd1b0; */
+  --c-white: #ffffff;
 }
 
 html {
