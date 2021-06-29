@@ -11,6 +11,7 @@ in pkgs.mkShell rec {
     rebar3
     erlang
     elixir
+    elixir_ls
     nodejs
    ] ++ optional stdenv.isLinux inotify-tools ++ optionals stdenv.isDarwin (with darwin.apple_sdk.frameworks; [ CoreFoundation CoreServices ]);
 
