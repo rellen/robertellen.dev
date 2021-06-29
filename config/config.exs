@@ -22,6 +22,7 @@ config :still,
   }
 
 config :still_snowpack,
+  port: 3003,
   input: Path.join(Path.dirname(__DIR__), "assets"),
   output: Path.join([Path.dirname(__DIR__), "_site", "assets"])
 
