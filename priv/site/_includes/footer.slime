@@ -1,4 +1,4 @@
-footer.flex.justify-center
+footer.flex.justify-center.mt-6
       p
         | Built using
         |  #{link @env, "Still", to: "https://github.com/still-ex/still", class: "opacity-60 no-underline hover:underline"}

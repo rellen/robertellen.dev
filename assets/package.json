@@ -9,9 +9,11 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "devDependencies": {
+    "dependencies": {
+        "@snowpack/plugin-postcss": "^1.2.0",
         "autoprefixer": "^10.2.4",
-        "postcss": "^8.2.6",
-        "tailwindcss": "^2.0.3"
+        "tailwindcss": "^2.0.3",
+        "@tailwindcss/typography": "^0.4.1",
+        "still_snowpack": "file:../deps/still_snowpack/priv/package"
     }
 }

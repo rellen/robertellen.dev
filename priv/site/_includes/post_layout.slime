@@ -1,0 +1,9 @@
+---
+layout: _includes/layout.slime
+---
+h2.title.py-4
+  = @title
+
+.mx-auto.py-8.px-4 class="md:container"
+  article.prose.max-w-none.prose-lg
+    = @children

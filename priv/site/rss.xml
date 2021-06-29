@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Robert Ellen</title>
+    <description>Robert Ellen's Blog</description>
+    <link>https://robertellen.dev</link>
+    <language>en-us</language>
+    <%= Enum.map sort_by_date(get_collections(@env, "post")), fn post -> %>
+    <item>
+      <title>
+        <![CDATA[<%= post[:metadata][:title] %>]]>
+      </title>
+      <link><%= url_for(post[:output_file]) %></link>
+      <guid isPermaLink="false"><%= url_for(post[:output_file]) %></guid>
+      <pubDate><%= pub_date(post[:metadata][:date]) %></pubDate>
+      <description>
+        <![CDATA[<%= post[:metadata][:summary] %>]]>
+      </description>
+    </item>
+    <% end %>
+  </channel>
+</rss>

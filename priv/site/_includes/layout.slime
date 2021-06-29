@@ -4,10 +4,10 @@ title: "Still"
 doctype html
 html
   head
-    title = assigns[:current] <> " | robertellen.dev"
+    title = (assigns[:current] || "robertellen.dev") <> " | robertellen.dev"
     meta charset="UTF-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-    = link_to_css "css/theme.css", media: "all"
+    = import_css_file("global.css") 
   body.p-6
     nav.flex.justify-center.gap-x-2
       = link @env, "Home", to: "/", class: "no-underline hover:underline #{if assigns[:current] != "home", do: "opacity-60"}"

@@ -1,4 +1,4 @@
-<ul class="flex justify-center gap-x-5">
+<ul class="flex justify-center py-4 gap-x-5">
       <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
       <li>
         <a href="https://twitter.com/robertellen" class="text-gray-400 hover:text-gray-500">

@@ -1,9 +1,9 @@
-defmodule Site.MixProject do
+defmodule RobertEllen.Dev.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :site,
+      app: :robert_ellen_dev,
       version: "0.1.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
@@ -16,7 +16,7 @@ defmodule Site.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Site.Application, []}
+      mod: {RobertEllen.Dev.Application, []}
     ]
   end
 
@@ -30,6 +30,7 @@ defmodule Site.MixProject do
   defp deps do
     [
       {:still, github: "still-ex/still", ref: "master", override: true},
+      {:still_snowpack, "~> 0.1.0"},
       {:nodejs, "~> 2.0"}
     ]
   end
