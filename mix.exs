@@ -30,8 +30,8 @@ defmodule RobertEllen.Dev.MixProject do
   defp deps do
     [
       {:still, github: "still-ex/still", ref: "master", override: true},
-      {:still_snowpack, "~> 0.1.0"},
-      {:nodejs, "~> 2.0"}
+      {:still_snowpack, "~> 0.2"}
+      # {:nodejs, "~> 2.0"}
     ]
   end
 end
