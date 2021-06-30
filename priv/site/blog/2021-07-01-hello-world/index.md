@@ -34,13 +34,13 @@ Going forward, I intend to blog about tech and tech life.
 
 I'm a software engineer with experience in full-stack web development, industrial control systems software, telecommunications, and other systems software.
 As mentioned, Elixir is my main language at the moment, and I also work on Javascript or Typescript frontends (mostly using Next.js).
-I'm a fan of the BEAM, and functional and/or real-time systems, and I'd really like to get back to hardware and (I)IoT.
+I'm a fan of the BEAM, functional programing, and real-time systems, and I'd really like to get back into hardware, embedded systems, and (I)IoT.
 So, I expect I'll write about things like that.
 
-I also have had a somewhat-unusual career path, and feel like its course took an interesting turn a few years ago.
+I have also had a somewhat-unusual career path, and feel like its course took an interesting turn a few years ago.
 For over a decade, I was working in a niche field of software engineering, in a situation that meant I wasn't able to use a lot of mainstream tech and development practices.
 Then, out of the blue, I got an opportunity to join a team that was much closer to what's typical in most development shops.
-That course change, I believe, will also be good to write about, because it's kind of like I've only been a developer, as most developers think of the craft, for a few years.
+That course change will also be good to write about, because I believe it gives me some insights into how to break into the industry as a newcomer.
 The journey I am on may be of interest to some developers, either starting out at a later stage in life, or coming into mainstream software engineering from niche domains.
 Without wanting to preempt my future writing on this, I think the main leason to learn is to, in whatever capacity you can, keep in touch with the mainstream without wasting time on the hype.
 
