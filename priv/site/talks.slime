@@ -1,0 +1,14 @@
+---
+layout: _includes/layout.slime
+current: talks
+---
+h2.title.py-4 Talks
+
+div.mx-auto.py-8.px-4 class="md:container"
+  div.flex.flex-col
+    div.text-center.py-4
+      p May 2021, was a bumper month for the BEAM ecosystem, with the release of OTP24 and Elixir 1.12
+      <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/ucgYT3YUVS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    div.text-center.py-4
+      p Nx, Numerical Elixir, is one of the most hotly anticipated libraries to be added to the Elixir ecosystem
+      <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/SgSbaGm5nR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
