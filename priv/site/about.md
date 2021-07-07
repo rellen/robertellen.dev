@@ -1,8 +1,7 @@
 ---
 layout: _includes/post_layout.slime
 current: about
-tag:
-  - post
+title: "About"
 ---
 ### Senior Full Stack Developer
 

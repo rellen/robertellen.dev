@@ -1,8 +1,7 @@
 ---
 layout: "_includes/post_layout.slime"
 current: talks
-tag:
-  - post
+title: "Talks"
 ---
 
 ## Talks
