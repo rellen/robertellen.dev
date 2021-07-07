@@ -12,5 +12,6 @@ html
     nav.flex.justify-center.gap-x-2
       = link @env, "Home", to: "/", class: "no-underline hover:underline #{if assigns[:current] != "home", do: "opacity-60"}"
       = link @env, "About", to: "/about", class: "no-underline hover:underline #{if assigns[:current] != "about", do: "opacity-60"}"
+      = link @env, "Talks", to: "/talks", class: "no-underline hover:underline #{if assigns[:current] != "talks", do: "opacity-60"}"
     = @children
     = include(@env, "_includes/footer.slime")
