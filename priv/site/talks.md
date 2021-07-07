@@ -1,11 +1,8 @@
 ---
 layout: "_includes/post_layout.slime"
 current: talks
-tag:
-  - post
+title: "Talks"
 ---
-
-## Talks
 
 ### OTP24 and Elixir 1.12 Release Bonanza!
 May 2021, was a bumper month for the BEAM ecosystem, with the release of OTP24 and Elixir 1.12

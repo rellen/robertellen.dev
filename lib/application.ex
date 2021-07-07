@@ -4,8 +4,6 @@ defmodule RobertEllen.Dev.Application do
   @js_file Path.join(Path.dirname(__DIR__), "/assets/index.js") |> Path.expand()
 
   def start(_type, _args) do
-    IO.puts("#{inspect(@js_path)}")
-
     children = [
       {Still.Snowpack.Supervisor, @js_file}
     ]
