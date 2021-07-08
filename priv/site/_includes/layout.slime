@@ -8,7 +8,7 @@ html
     meta charset="UTF-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     = import_css_file("global.css") 
-  body.p-6
+  body.overscroll-none.antialiased.min-h-full.h-full.overflow-x-hidden.w-full
     nav.flex.justify-center.gap-x-2
       = link @env, "Home", to: "/", class: "no-underline hover:underline #{if assigns[:current] != "home", do: "opacity-60"}"
       = link @env, "About", to: "/about", class: "no-underline hover:underline #{if assigns[:current] != "about", do: "opacity-60"}"
