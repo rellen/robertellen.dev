@@ -47,7 +47,7 @@ Without wanting to preempt my future writing on this, I think the main leason to
 ## The end of the beginning
 
 Working with Still to get this blog going has been fun and rewarding.
-I'm excited to write my first 'Hello, world!!!' post soon so that I can go legit.
+I'm excited to write my first non-'Hello, world!!!' post soon so that I can go legit.
 See you there!
 
 
