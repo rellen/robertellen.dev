@@ -11,9 +11,10 @@
     "license": "ISC",
     "dependencies": {
         "@snowpack/plugin-postcss": "^1.2.0",
-        "autoprefixer": "^10.2.5",
-        "tailwindcss": "^2.0.4",
         "@tailwindcss/typography": "^0.4.1",
-        "still_snowpack": "file:../deps/still_snowpack/priv/package"
+        "autoprefixer": "^10.2.5",
+        "postcss": "^8.3.6",
+        "still_snowpack": "file:../deps/still_snowpack/priv/package",
+        "tailwindcss": "^2.2.6"
     }
 }

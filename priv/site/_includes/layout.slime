@@ -1,6 +1,3 @@
----
-title: "Still"
----
 doctype html
 html
   head
@@ -9,7 +6,7 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     = import_css_file("global.css") 
   body.overscroll-none.antialiased.min-h-full.h-full.overflow-x-hidden.w-full
-    nav.flex.justify-center.gap-x-2
+    nav.flex.justify-center.gap-x-2.text-xl
       = link @env, "Home", to: "/", class: "no-underline hover:underline #{if assigns[:current] != "home", do: "opacity-60"}"
       = link @env, "About", to: "/about", class: "no-underline hover:underline #{if assigns[:current] != "about", do: "opacity-60"}"
       = link @env, "Talks", to: "/talks", class: "no-underline hover:underline #{if assigns[:current] != "talks", do: "opacity-60"}"

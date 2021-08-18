@@ -5,14 +5,15 @@
 
 :root {
   --c-black: #222222;
-  /* --c-white: #edd1b0; */
+  --c-peach: #edd1b0;
+  --c-peach: #edd1b0;
   --c-white: #ffffff;
   --c-bg: #fafafa;
 }
 
 html {
-  background-color: var(--c-bg);
-  font-size: 16px;
+  background-color: var(--c-peach);
+  font-size: 20px;
   line-height: 1.2;
   font-family: sans-serif;
   color: var(--c-black);

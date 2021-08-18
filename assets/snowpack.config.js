@@ -9,14 +9,14 @@ module.exports = {
   plugins: [
     "@snowpack/plugin-postcss"
   ],
-  packageOptions: {
-    /* ... */
-  },
+  // packageOptions: {
+  //   /* ... */
+  // },
   devOptions: {
-    /* ... */
+    tailwindConfig: './tailwind.config.js',
   },
-  buildOptions: {
-    /* ... */
-    metaUrlPath: ""
-  },
+  // buildOptions: {
+  //   /* ... */
+  //   metaUrlPath: ""
+  // },
 };
