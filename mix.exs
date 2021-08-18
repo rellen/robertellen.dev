@@ -5,7 +5,7 @@ defmodule RobertEllen.Dev.MixProject do
     [
       app: :robert_ellen_dev,
       version: "0.1.0",
-      elixir: "~> 1.10",
+      elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
       deps: deps()
@@ -29,7 +29,7 @@ defmodule RobertEllen.Dev.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:still, github: "still-ex/still", ref: "master", override: true},
+      {:still, git: "https://github.com/still-ex/still", branch: "master", override: true},
       {:still_snowpack, "~> 0.2"}
       # {:nodejs, "~> 2.0"}
     ]

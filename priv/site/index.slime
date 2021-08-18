@@ -3,21 +3,21 @@ layout: _includes/layout.slime
 current: home
 ---
 
-h1.title.py-4 Rob's ramblings 
-p.text-center A tech blog by Robert Ellen 
+h1.title.font-bold.py-4 Rob's Ramblings 
+p.text-center.text-xl A tech blog by Robert Ellen 
 
 .main
   = include(@env, "_includes/social.slime")
 
-  .prose.prose-lg.mx-auto.-mt-16.pt-28.px-4 class="md:container"
-    div
+  .mx-auto.p-6 class="md:container"
+    .pt-4
       h2.text-xl.mb-6.tracking-wide.font-bold class="sm:text-2xl"
         | Posts
         = link @env, "RSS", to: "rss.xml", class: "text-lg ml-4 font-bold"
 
-      ul.list-none
+      ul
         = Enum.map sort_by_date(get_collections(@env, "post")), fn post ->
-          li.mb-4
+          li
             = link @env, post[:metadata][:title], to: post[:output_file], class: "text-base sm:text-xl"
             div
               = post[:metadata][:date]
