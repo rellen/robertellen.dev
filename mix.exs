@@ -15,8 +15,7 @@ defmodule RobertEllen.Dev.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger],
-      mod: {RobertEllen.Dev.Application, []}
+      extra_applications: [:logger]
     ]
   end
 
@@ -29,9 +28,7 @@ defmodule RobertEllen.Dev.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:still, git: "https://github.com/still-ex/still", branch: "master", override: true},
-      {:still_snowpack, "~> 0.2"}
-      # {:nodejs, "~> 2.0"}
+      {:still, git: "https://github.com/still-ex/still", branch: "master", override: true}
     ]
   end
 end

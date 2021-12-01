@@ -12,8 +12,8 @@ jobs:
 
       - uses: erlef/setup-elixir@v1
         with:
-          otp-version: '23.2'
-          elixir-version: '1.11.3'
+          otp-version: '24.0'
+          elixir-version: '1.12.1'
 
       - name: Restore Cache
         uses: actions/cache@v2
@@ -27,7 +27,11 @@ jobs:
 
       - run: MIX_ENV=prod mix deps.get
 
-      - run: npm install --prefix assets
+      - run: cd priv/site/assets && npm install
+
+      - run: cd priv/site/assets && NODE_ENV=production npx tailwindcss -o ../global.css -i global.css --minify
+
+      - run: MIX_ENV=prod mix compile
 
       - run: MIX_ENV=prod mix still.compile
 

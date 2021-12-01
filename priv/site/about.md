@@ -1,5 +1,5 @@
 ---
-layout: _includes/post_layout.slime
+layout: _includes/about_layout.slime
 current: about
 title: "About"
 ---
