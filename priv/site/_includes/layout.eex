@@ -4,14 +4,14 @@
     <title><%= (assigns[:current] || "robertellen.dev") <> " | robertellen.dev" %></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= link_to_css("global.css") %>
+    <%= link_to_css(@env, "global.css") %>
     <body class="overscroll-none antialiased min-h-full h-full overflow-x-hidden w-full">
       <nav class="flex justify-center gap-x-2 text-xl">
         <%= link @env, "Home", to: "/", class: "no-underline hover:underline #{if assigns[:current] != "home", do: "opacity-60"}" %>
         <%= link @env, "About", to: "/about", class: "no-underline hover:underline #{if assigns[:current] != "about", do: "opacity-60"}" %>
         <%= link @env, "Talks", to: "/talks", class: "no-underline hover:underline #{if assigns[:current] != "talks", do: "opacity-60"}" %>
       </nav>
-      <%=  @children %>
+      <%= @children %>
       <%= include(@env, "_includes/footer.slime") %>
     </body>
   </head>
