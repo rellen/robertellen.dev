@@ -10,7 +10,6 @@ module.exports = {
                         '> li': {
                             '&::before': { // more complex example - add before to an li element.
                                 'background-color': '#374151',
-                            
                             }
                         }
                     },

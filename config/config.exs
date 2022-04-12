@@ -17,6 +17,7 @@ config :still,
   template_helpers: [RobertEllen.Dev.ViewHelpers],
   input: Path.join(Path.dirname(__DIR__), "priv/site"),
   output: Path.join(Path.dirname(__DIR__), "_site"),
+  pass_through_copy: ["robots.txt", "favicon.ico"],
   url_fingerprinting: false,
   ignore_files: ["assets"],
   watchers: [
