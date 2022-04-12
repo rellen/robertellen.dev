@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title><%= (assigns[:current] || "robertellen.dev") <> " | robertellen.dev" %></title>
     <meta charset="UTF-8">
