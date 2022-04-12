@@ -3,7 +3,7 @@ layout: _includes/layout.slime
 current: home
 ---
 
-h1.title.font-bold.py-4 Rob's Ramblings zzzz 
+h1.title.font-bold.py-4 Rob's Ramblings
 p.text-center.text-xl A tech blog by Robert Ellen 
 
 .main

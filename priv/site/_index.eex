@@ -3,8 +3,8 @@ layout: _includes/layout.eex
 current: home
 ---
 
-<h1 class="title font-bold py-4"> Rob's Ramblings</h1>
-<p class="text-center text-xl"> A tech blog by Robert Ellen</p>
+<h1 class="title font-bold py-4">Z Rob's Ramblings</h1>
+<p class="text-center text-xl">A tech blog by Robert Ellen</p>
 
 <div class="main">
   <%= include(@env, "_includes/social.slime") %>

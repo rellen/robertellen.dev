@@ -1,11 +1,12 @@
 doctype html
-html
+html lang="en"
   head
     title = (assigns[:current] || "robertellen.dev") <> " | robertellen.dev"
     meta charset="UTF-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-    = link_to_css("global.css") 
-    = link_to_css("site.css") 
+    meta name="description" content="A tech blog by Robert Ellen"
+    = link_to_css(@env, "global.css") 
+    = link_to_css(@env, "site.css") 
   body.overscroll-none.antialiased.min-h-full.h-full.overflow-x-hidden.w-full
     nav.flex.justify-center.gap-x-2.text-xl
       = link @env, "Home", to: "/", class: "no-underline hover:underline #{if assigns[:current] != "home", do: "opacity-60"}"
