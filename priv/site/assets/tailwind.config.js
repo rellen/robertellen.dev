@@ -18,7 +18,6 @@ module.exports = {
                     },
                     color: theme('colors.white'),
                     a: {
-
                         color: theme('colors.cyan'),
                         '&:hover': {
                             color: theme('colors.white'),
@@ -65,6 +64,15 @@ module.exports = {
     colors: {
         'white': '#f8f8f2',
         'black': '#282a36',
+        'purple': '#bd93f9',
+        'green': '#50fa7b',
+        'cyan': '#8be9fd',
+        'orange': '#ffb86c',
+        'selection': '#44475a',
+    },
+    fontFamily: {
+        sans: ['Source Sans Pro', 'sans-serif'],
+        serif: ['Source Serif Pro', 'serif'],
     },
   },
   variants: {
