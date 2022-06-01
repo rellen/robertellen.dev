@@ -5,5 +5,8 @@ h2.text-center.py-4 style="font-weight: bold;font-size: 2.5rem;"
   = @title
 
 .mx-auto.py-8.px-4 class="md:container"
-  article.prose.max-w-none.prose-lg
+  article.prose.max-w-none.prose-lg.text-justify.font-sans
     = @children
+
+div.text-center
+  = link @env, "Back Home", to: "/", class: "text-cyan underline hover:underline"

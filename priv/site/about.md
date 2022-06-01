@@ -11,16 +11,16 @@ title: "About"
 
 ### Technology
 
-- **Back End / Systems**:  Elixir, Erlang, Java, Node.JS, Haskell
-- **Front End**: Javascript, CSS, HTML
+- **Back-End / Systems**:  Elixir, Erlang, Java, Node.JS, Haskell
+- **Front-End**: Javascript, CSS, HTML, TailwindCSS
 - **Frameworks/Libraries:** Phoenix (incl. LiveView), React, JSP
-- **Databases**: Postgres, MySQL, SQLite
+- **Databases**: Postgres, MySQL, SQLite, Kafka
 - **APIs:** ReST/JSON, gRPC, GraphQL
-- **Architecture:** CQRS/ES, PubSub, CRUD, Microliths, Stranglers
-- **Cloud:** AWS, Gigalixir, Linode
+- **Architecture:** CQRS/ES, PubSub, CRUD, Microliths, Macroservices, Stranglers
+- **Cloud:** AWS, Gigalixir, Linode, Netlify
 - **Observability:** InfluxDB, Grafana, Syslog, Prometheus
 - **OS:** MacOS, NixOS, Ubuntu, Windows (incl. WSL), Docker
-- **Tools**: Git, Github, Jira, Bitbucket, Bamboo (Atlassian)
+- **Tools**: Git, GitHub, Jira, Bitbucket, Bamboo (Atlassian)
 - **Misc:** Spacemacs, vim, emacs, tmux, LaTeX
 
 ## Work Experience
@@ -85,4 +85,4 @@ title: "About"
 
 ### Bachelor of Information Technology (Software Engineering)
 
-**Queensland University of Technology, Brisbane**, 1999 → 2003
+**Queensland University of Technology (QUT), Brisbane**, 1999 → 2003

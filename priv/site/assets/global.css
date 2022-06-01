@@ -6,17 +6,23 @@
 :root {
   --c-black: #222222;
   --c-peach: #edd1b0;
-  --c-peach: #edd1b0;
   --c-white: #ffffff;
   --c-bg: #fafafa;
+  --c-base3: #fdf6e3;
+  --c-base1: #93a1a1;
+  --c-base0: #839496;
+  --c-dr-back: #282a36;
+  --c-dr-fore: #f8f8f2;
+
 }
 
 html {
-  background-color: var(--c-peach);
-  font-size: 20px;
+  background-color: var(--c-dr-back);
+  font-size: 18px;
   line-height: 1.2;
-  font-family: sans-serif;
-  color: var(--c-black);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-feature-settings: 'liga', 'clig';
+  color: var(--c-dr-fore);
 }
 
 .title {
