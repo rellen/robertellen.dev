@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Source Sans Pro, sans-serif;
   /* 4 */
 }
 
@@ -482,7 +482,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :where(a):not(:where([class~="not-prose"] *)) {
-  color: #f8f8f2;
+  color: #8be9fd;
   text-decoration: underline;
   font-weight: 500;
 }
@@ -492,7 +492,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :where(strong):not(:where([class~="not-prose"] *)) {
-  color: #f8f8f2;
+  color: #ffb86c;
   font-weight: 600;
 }
 
@@ -572,7 +572,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.6em;
   margin-bottom: 1.6em;
   padding-left: 1em;
-  border-left-color: #374151;
 }
 
 .prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before {
@@ -597,7 +596,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :where(h2):not(:where([class~="not-prose"] *)) {
-  color: #f8f8f2;
+  color: #bd93f9;
   font-weight: 700;
   font-size: 1.5em;
   margin-top: 2em;
@@ -610,7 +609,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :where(h3):not(:where([class~="not-prose"] *)) {
-  color: #f8f8f2;
+  color: #bd93f9;
   font-weight: 600;
   font-size: 1.25em;
   margin-top: 1.6em;
@@ -647,17 +646,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :where(code):not(:where([class~="not-prose"] *)) {
-  color: var(--tw-prose-code);
+  color: #50fa7b;
   font-weight: 600;
   font-size: 0.875em;
 }
 
 .prose :where(code):not(:where([class~="not-prose"] *))::before {
-  content: "`";
+  content: ;
 }
 
 .prose :where(code):not(:where([class~="not-prose"] *))::after {
-  content: "`";
+  content: ;
 }
 
 .prose :where(a code):not(:where([class~="not-prose"] *)) {
@@ -1107,6 +1106,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1148,8 +1168,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .min-h-full {
   min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-auto {
@@ -1168,12 +1206,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: none;
 }
 
+.flex-none {
+  flex: none;
+}
+
+.flex-initial {
+  flex: 0 1 auto;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-x-2 {
@@ -1186,6 +1244,11 @@ Ensure the default browser behavior of the `hidden` attribute.
        column-gap: 1.25rem;
 }
 
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1193,6 +1256,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .overscroll-none {
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 42 54 / var(--tw-bg-opacity));
+}
+
+.bg-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 71 90 / var(--tw-bg-opacity));
 }
 
 .p-10 {
@@ -1230,8 +1303,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Source Serif Pro, serif;
+}
+
+.font-sans {
+  font-family: Source Sans Pro, sans-serif;
 }
 
 .text-xl {
@@ -1255,6 +1336,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.text-purple {
+  --tw-text-opacity: 1;
+  color: rgb(189 147 249 / var(--tw-text-opacity));
+}
+
+.text-cyan {
+  --tw-text-opacity: 1;
+  color: rgb(139 233 253 / var(--tw-text-opacity));
+}
+
+.text-orange {
+  --tw-text-opacity: 1;
+  color: rgb(255 184 108 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1296,9 +1392,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 html {
   background-color: var(--c-dr-back);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-feature-settings: 'liga', 'clig';
   color: var(--c-dr-fore);
 }
 
