@@ -74,6 +74,10 @@ module.exports = {
         sans: ['Source Sans Pro', 'sans-serif'],
         serif: ['Source Serif Pro', 'serif'],
     },
+    colors: {
+        'white': '#f8f8f2',
+        'black': '#282a36',
+    },
   },
   variants: {
       extend: {},
