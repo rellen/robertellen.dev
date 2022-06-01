@@ -1,6 +1,7 @@
 ---
 layout: _includes/layout.slime
 ---
+
 h2.text-center.py-4.font-bold.text-purple class="text-2xl sm:text-3xl"
   = @title
 
