@@ -18,16 +18,11 @@
 
 html {
   background-color: var(--c-dr-back);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
   font-family: 'Source Sans Pro', sans-serif;
   font-feature-settings: 'liga', 'clig';
   color: var(--c-dr-fore);
-}
-
-.title {
-  text-align: center;
-  font-size: 54px;
 }
 
 .main {
