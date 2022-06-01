@@ -18,6 +18,7 @@ module.exports = {
                     },
                     color: theme('colors.white'),
                     a: {
+
                         color: theme('colors.cyan'),
                         '&:hover': {
                             color: theme('colors.white'),
