@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-        typography: {
+        typography: ({ theme }) => ({
             DEFAULT: {
                 css: {
                     ul: {
@@ -14,15 +14,35 @@ module.exports = {
                         }
                     },
                     blockquote: {
-                        'border-left-color': '#374151',
+                        color: theme('colors.white'),
+                    },
+                    color: theme('colors.white'),
+                    a: {
+                        color: theme('colors.white'),
+                        '&:hover': {
+                            color: theme('colors.white'),
+                        }
+                    },
+                    h2: {
+                        color: theme('colors.white'),
+                    },
+                    h3: {
+                        color: theme('colors.white'),
+                    },
+                    strong: {
+                        color: theme('colors.white'),
                     }
                 }
             }
-        }
+        })
     },
     screens: {
       sm: "600px",
       md: "900px",
+    },
+    colors: {
+        'white': '#f8f8f2',
+        'black': '#282a36',
     },
   },
   variants: {

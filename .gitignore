@@ -13,3 +13,5 @@ erl_crash.dump
 .nix-hex
 .nix-mix
 _site
+priv/site/assets/node_modules/
+**/*.~undo-tree~
