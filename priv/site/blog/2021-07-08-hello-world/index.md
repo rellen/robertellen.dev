@@ -2,7 +2,7 @@
 title: "robertellen.dev is live!"
 date: 2021-07-08
 layout: "_includes/post_layout.slime"
-summary: " After a little bit of tinkering, I'm going live with robertellen.dev, a blog about technology and developer life."
+summary: "After a little bit of tinkering, I'm going live with robertellen.dev, a blog about technology and developer life."
 tag:
   - post
 ---

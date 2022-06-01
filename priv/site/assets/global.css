@@ -18,9 +18,10 @@
 
 html {
   background-color: var(--c-dr-back);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-feature-settings: 'liga', 'clig';
   color: var(--c-dr-fore);
 }
 

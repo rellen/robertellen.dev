@@ -4,6 +4,10 @@ current: talks
 title: "Talks"
 ---
 
+### GraphQL APIs for Postgres with pg_graphql
+`pg_graphql` by Supabase is a lightweight extension to Postgres that adds a GraphQL layer over your databases, in the same style as PostgREST. This talk will go over how to get started with pg_graphql.
+GraphQL Australia, May 2022 - [https://youtu.be/zBdS12xvsSI](https://youtu.be/zBdS12xvsSI)
+
 ### Macro Madness: when busting boilerplate backfires
 A brief talk about an adventure in writing some macro code to reduce boiler-plate.
 Elixir Australia, February 2022 -  [https://youtu.be/Y-1xhtVz-B4](https://youtu.be/Y-1xhtVz-B4)
