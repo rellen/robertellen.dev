@@ -4,7 +4,8 @@ current: home
 ---
 
 h1.title.font-bold.py-4 Rob's Ramblings
-p.text-center.text-xl A tech blog by Robert Ellen 
+p.text-center.text-xl.font-serif A tech blog by Robert Ellen 
+
 
 .main
   = include(@env, "_includes/social.slime")
@@ -21,5 +22,5 @@ p.text-center.text-xl A tech blog by Robert Ellen
             = link @env, post[:metadata][:title], to: post[:output_file], class: "text-base sm:text-xl"
             div
               = post[:metadata][:date]
-            div
+            div.font-serif
               = post[:metadata][:summary]

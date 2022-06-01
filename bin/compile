@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+(cd priv/site/assets && NODE_ENV=production npx tailwindcss -o ../global.css -i global.css --minify)
+
+MIX_ENV=prod mix still.compile
