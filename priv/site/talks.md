@@ -3,6 +3,7 @@ layout: "_includes/post_layout.slime"
 current: talks
 title: "Talks"
 ---
+
 ### Macro Madness: when busting boilerplate backfires
 A brief talk about an adventure in writing some macro code to reduce boiler-plate.
 Elixir Australia, February 2022 -  [https://youtu.be/Y-1xhtVz-B4](https://youtu.be/Y-1xhtVz-B4)
@@ -17,7 +18,6 @@ Elixir Australia, September 2021 - [https://youtu.be/bLdheYG7BwQ](https://youtu.
 ### OTP24 and Elixir 1.12 Release Bonanza!
 May 2021, was a bumper month for the BEAM ecosystem, with the release of OTP24 and Elixir 1.12
 Elixir Australia, May 2021 - [https://youtu.be/ucgYT3YUVS8](https://youtu.be/ucgYT3YUVS8)
-
 
 ### Kicking the tires on Nx - Numerical Elixir
 Nx, Numerical Elixir, is one of the most hotly anticipated libraries to be added to the Elixir ecosystem

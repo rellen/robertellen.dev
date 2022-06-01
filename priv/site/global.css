@@ -1262,6 +1262,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .no-underline {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;

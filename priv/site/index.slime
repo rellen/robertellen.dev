@@ -6,6 +6,7 @@ current: home
 h1.title.font-bold.py-4 Rob's Ramblings
 p.text-center.text-xl.font-serif A tech blog by Robert Ellen 
 
+
 .main
   = include(@env, "_includes/social.slime")
 
