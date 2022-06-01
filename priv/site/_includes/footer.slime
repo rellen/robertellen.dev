@@ -1,6 +1,8 @@
-footer.flex.justify-center.mt-6
+footer.flex.justify-center.mt-6.py-4.bg-selection.flex-none.justify-evenly class="text-sm sm:text-base" 
+      p
+        | Copyright © 2021-2022 Robert Ellen 
       p
         | Built using
-        |  #{link @env, "Still", to: "https://github.com/still-ex/still", class: "underline"}
+        |  #{link @env, "Still", to: "https://github.com/still-ex/still", class: "text-cyan underline"}
         |  and
-        |  #{link @env, "TailwindCSS", to: "https://tailwindcss.com", class: "underline"}
+        |  #{link @env, "TailwindCSS", to: "https://tailwindcss.com", class: "text-cyan underline"}

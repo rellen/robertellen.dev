@@ -1,16 +1,21 @@
 doctype html
-html lang="en"
+html.h-screen lang="en"
   head
     title = (assigns[:current] || "robertellen.dev") <> " | robertellen.dev"
     meta charset="UTF-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     meta name="description" content="A tech blog by Robert Ellen"
     = link_to_css(@env, "global.css") 
-    = link_to_css(@env, "site.css") 
-  body.overscroll-none.antialiased.min-h-full.h-full.overflow-x-hidden.w-full
-    nav.flex.justify-center.gap-x-2.text-xl
-      = link @env, "Home", to: "/", class: "no-underline hover:underline #{if assigns[:current] != "home", do: "opacity-60"}"
-      = link @env, "About", to: "/about", class: "no-underline hover:underline #{if assigns[:current] != "about", do: "opacity-60"}"
-      = link @env, "Talks", to: "/talks", class: "no-underline hover:underline #{if assigns[:current] != "talks", do: "opacity-60"}"
-    = @children
+    = link_to_css(@env, "site.css")
+    link rel="preconnect" href="https://fonts.googleapis.com"
+    link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"
+    link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet"
+    
+  body.overscroll-none.antialiased.min-h-full.overflow-x-hidden.w-full.flex.flex-col
+    nav.flex.justify-center.gap-x-4.sticky.top-0.z-40.bg-selection.flex-none.py-4 class="text-lg sm:text-xl"
+      = link @env, "Home", to: "/", class: "text-cyan no-underline hover:underline #{if assigns[:current] != "home", do: "opacity-60"}"
+      = link @env, "About", to: "/about", class: "text-cyan no-underline hover:underline #{if assigns[:current] != "about", do: "opacity-60"}"
+      = link @env, "Talks", to: "/talks", class: "text-cyan no-underline hover:underline #{if assigns[:current] != "talks", do: "opacity-60"}"
+    div.flex-1
+      = @children
     = include(@env, "_includes/footer.slime")
