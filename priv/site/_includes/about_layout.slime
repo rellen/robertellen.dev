@@ -5,6 +5,6 @@ layout: _includes/layout.slime
 h2.text-center.py-4.font-bold.text-purple class="text-2xl sm:text-3xl"
   = @title
 
-.mx-auto.py-8.px-4 class="md:container"
-  article.prose.max-w-none.font-sans#about class="prose-base sm:prose-lg"
+.mx-auto.py-8.px-4 class="container"
+  article.prose.max-w-none.font-sans.text-justify#about class="prose-base sm:prose-lg"
     = @children

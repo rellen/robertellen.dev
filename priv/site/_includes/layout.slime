@@ -12,11 +12,13 @@ html.h-screen lang="en"
     link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Source+Sans+Pro&display=swap" rel="stylesheet"
     
   body.overscroll-none.antialiased.min-h-full.overflow-x-hidden.w-full.flex.flex-col
-    nav.flex.justify-center.gap-x-4.sticky.top-0.z-40.bg-selection.flex-none.py-4 class="text-lg sm:text-xl"
-      = link @env, "Home", to: "/", class: "text-cyan #{if assigns[:current] == "home", do: "no-underline", else: "underline"}"
-      = link @env, "About", to: "/about", class: "text-cyan #{if assigns[:current] == "about", do: "no-underline", else: "underline"}"
-      = link @env, "Talks", to: "/talks", class: "text-cyan #{if assigns[:current] == "talks", do: "no-underline", else: "underline"}"
+    nav.flex.justify-center.gap-x-4.sticky.top-0.z-40.bg-black.flex-none.drop-shadow-md class="text-lg sm:text-xl py-2 sm:py-4"
+      = link @env, "Home", to: "/", class: "text-cyan hover:text-white transition duration-300 #{if assigns[:current] == "home", do: "no-underline", else: "underline"}"
+      = link @env, "About", to: "/about", class: "text-cyan hover:text-white transition duration-300 #{if assigns[:current] == "about", do: "no-underline", else: "underline"}"
+      = link @env, "Talks", to: "/talks", class: "text-cyan hover:text-white transition duration-300 #{if assigns[:current] == "talks", do: "no-underline", else: "underline"}"
     div.flex-1
       = @children
+    div.flex-none
+      = include(@env, "_includes/cta.slime")
     div.flex-none
       = include(@env, "_includes/footer.slime")
