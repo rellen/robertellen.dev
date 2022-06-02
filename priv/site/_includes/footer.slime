@@ -1,7 +1,10 @@
-footer.flex.justify-center.mt-6.py-4.bg-selection.flex-none.justify-evenly class="text-sm sm:text-base" 
-      p
-        | Copyright © 2021-2022 Robert Ellen 
-      p
+footer.mt-6.py-4.bg-selection class="text-xs sm:text-sm" 
+  div.flex.justify-around#footer-content
+      p.px-2.text-left
+        span class="hidden sm:inline" Copyright &nbsp;
+        span.inline-block © 2021-2022 &nbsp;
+        span.inline-block Robert Ellen 
+      p.px-2.text-right
         | Built using
         |  #{link @env, "Still", to: "https://github.com/still-ex/still", class: "text-cyan underline"}
         |  and
