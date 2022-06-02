@@ -13,9 +13,9 @@ html.h-screen lang="en"
     
   body.overscroll-none.antialiased.min-h-full.overflow-x-hidden.w-full.flex.flex-col
     nav.flex.justify-center.gap-x-4.sticky.top-0.z-40.bg-selection.flex-none.py-4 class="text-lg sm:text-xl"
-      = link @env, "Home", to: "/", class: "text-cyan no-underline hover:underline #{if assigns[:current] != "home", do: "opacity-60"}"
-      = link @env, "About", to: "/about", class: "text-cyan no-underline hover:underline #{if assigns[:current] != "about", do: "opacity-60"}"
-      = link @env, "Talks", to: "/talks", class: "text-cyan no-underline hover:underline #{if assigns[:current] != "talks", do: "opacity-60"}"
+      = link @env, "Home", to: "/", class: "text-cyan #{if assigns[:current] == "home", do: "no-underline", else: "underline"}"
+      = link @env, "About", to: "/about", class: "text-cyan #{if assigns[:current] == "about", do: "no-underline", else: "underline"}"
+      = link @env, "Talks", to: "/talks", class: "text-cyan #{if assigns[:current] == "talks", do: "no-underline", else: "underline"}"
     div.flex-1
       = @children
     div.flex-none
