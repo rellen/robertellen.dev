@@ -18,4 +18,5 @@ html.h-screen lang="en"
       = link @env, "Talks", to: "/talks", class: "text-cyan no-underline hover:underline #{if assigns[:current] != "talks", do: "opacity-60"}"
     div.flex-1
       = @children
-    = include(@env, "_includes/footer.slime")
+    div.flex-none
+      = include(@env, "_includes/footer.slime")
