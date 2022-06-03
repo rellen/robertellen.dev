@@ -74,15 +74,10 @@ title: "About"
 
 ## Talks
 
-- OTP24 and Elixir 1.12 Release Bonanza! - Elixir Australia, May 2021 - [https://youtu.be/ucgYT3YUVS8](https://youtu.be/ucgYT3YUVS8)
-- Kicking the tires on Nx - Elixir Australia, March 2021 - [https://youtu.be/SgSbaGm5nR0](https://youtu.be/SgSbaGm5nR0)
-- gRPC in Elixir - Elixir Australia, November 2020 - [https://youtu.be/1jwruFHxPJ4](https://youtu.be/1jwruFHxPJ4)
-- A Quick Introduction to Erlang and the OTP Libraries - BFPG, October 2013 - [https://vimeo.com/78207134](https://vimeo.com/78207134)
+[Talks can be found here](talks)
 
 ## Education
 
-### Bachelor of Engineering (Electronics)
-
-### Bachelor of Information Technology (Software Engineering)
+### Bachelor of Engineering (Electronics) and Bachelor of Information Technology (Software Engineering)
 
 **Queensland University of Technology (QUT), Brisbane**, 1999 → 2003

@@ -28,12 +28,12 @@ html {
 .main {
   padding: 1rem;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 640px;
 }
 
 #footer-content {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 640px;
 }
 
 #article > ul {

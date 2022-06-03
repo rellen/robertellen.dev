@@ -47,8 +47,7 @@ module.exports = {
         })
     },
     screens: {
-      sm: "600px",
-      md: "900px",
+      sm: "640px",
     },
     colors: {
         'white': '#f8f8f2',

@@ -4,7 +4,7 @@ layout: _includes/layout.slime
 h1.text-center.py-4.font-bold.text-purple class="text-2xl sm:text-3xl"
   = @title
 
-.mx-auto.py-8.px-4 class="md:container"
+.mx-auto.py-8.px-4 class="container"
   article.prose.max-w-none.text-justify.font-sans class="prose-sm sm:prose-base"
     = @children
 div.text-center
