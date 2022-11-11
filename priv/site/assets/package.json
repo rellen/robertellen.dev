@@ -9,9 +9,9 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "dependencies": {
-        "@tailwindcss/typography": "^0.5.2",
-        "autoprefixer": "^10.3.2",
-        "tailwindcss": "^3.0.24"
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.5.8",
+        "autoprefixer": "^10.4.13",
+        "tailwindcss": "^3.2.3"
     }
 }

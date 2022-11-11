@@ -1,8 +1,8 @@
 { pkgs ? import <nixpkgs> { }, nixpkgs ? <nixpkgs> }:
 let
     inherit (pkgs.lib) optional optionals;
-    erlang = pkgs.beam.interpreters.erlangR24;
-    elixir = pkgs.beam.packages.erlangR24.elixir_1_12;
+    erlang = pkgs.beam.interpreters.erlangR25;
+    elixir = pkgs.beam.packages.erlangR25.elixir_1_14;
 
 in pkgs.mkShell rec {
   name = "ssg-still";
