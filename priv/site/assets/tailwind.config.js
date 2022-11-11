@@ -61,23 +61,6 @@ module.exports = {
         sans: ['Source Sans Pro', 'sans-serif'],
         serif: ['Source Serif Pro', 'serif'],
     },
-    colors: {
-        'white': '#f8f8f2',
-        'black': '#282a36',
-        'purple': '#bd93f9',
-        'green': '#50fa7b',
-        'cyan': '#8be9fd',
-        'orange': '#ffb86c',
-        'selection': '#44475a',
-    },
-    fontFamily: {
-        sans: ['Source Sans Pro', 'sans-serif'],
-        serif: ['Source Serif Pro', 'serif'],
-    },
-    colors: {
-        'white': '#f8f8f2',
-        'black': '#282a36',
-    },
   },
   variants: {
       extend: {},
