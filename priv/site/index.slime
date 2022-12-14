@@ -17,9 +17,11 @@ p.text-center.font-serif class="text-lg sm:text-xl" A tech blog by Robert Ellen
       ul
         = Enum.map sort_by_date(get_collections(@env, "post")), fn post ->
           li
-            div.flex.justify-between
-              = link @env, post[:metadata][:title], to: post[:output_file], class: "text-cyan hover:text-white transition duration-300 text-xl sm:text-2xl"
-              div.text-orange class="text-lg sm:text-xl"
-                = post[:metadata][:date]
-            div.font-sans
-              = post[:metadata][:summary]
+            a href="#{post[:output_file]}" class="hover:text-green transition duration-300"
+              div.flex.justify-between
+                span class="text-cyan transition duration-300 text-xl sm:text-2xl"
+                  = post[:metadata][:title]
+                div class="text-orange text-lg sm:text-xl"
+                  = post[:metadata][:date]
+              div class="font-sans"
+                = post[:metadata][:summary]
