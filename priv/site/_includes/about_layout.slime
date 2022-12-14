@@ -2,9 +2,9 @@
 layout: _includes/layout.slime
 ---
 
-h2.text-center.py-4.font-bold.text-purple class="text-2xl sm:text-3xl"
+h2.text-center.py-4.font-bold.text-purple class="text-3xl sm:text-2xl"
   = @title
 
 .mx-auto.py-8.px-4 class="container"
-  article.prose.max-w-none.font-sans#about class="prose-base sm:prose-lg"
+  article.prose.max-w-none.font-sans#about class="prose-lg sm:prose-base"
     = @children

@@ -3,8 +3,8 @@ layout: _includes/layout.slime
 current: home
 ---
 
-h1.font-bold.py-4.text-center.text-purple class="text-2xl sm:text-3xl" Rob's Ramblings
-p.text-center.font-serif class="text-lg sm:text-xl" A tech blog by Robert Ellen
+h1.font-bold.py-4.text-center.text-purple class="text-3xl sm:text-2xl" Rob's Ramblings
+p.text-center.font-serif class="text-xl sm:text-lg" A tech blog by Robert Ellen
 
 .main
   = include(@env, "_includes/social.slime")
@@ -13,15 +13,15 @@ p.text-center.font-serif class="text-lg sm:text-xl" A tech blog by Robert Ellen
     .pt-4
       h2.text-xl.mb-6.tracking-wide.font-bold.text-purple class="sm:text-2xl"
         | Recent Posts
-        = link @env, "RSS", to: "rss.xml", class: "text-cyan hover:text-white transition duration-300 underline ml-4 font-bold text-base sm:text-lg"
+        = link @env, "RSS", to: "rss.xml", class: "text-cyan hover:text-white transition duration-300 underline ml-4 font-bold text-lg sm:text-base"
       ul
         = Enum.map sort_by_date(get_collections(@env, "post")), fn post ->
           li
             a href="#{post[:output_file]}" class="hover:text-green transition duration-300"
               div.flex.justify-between
-                span class="text-cyan transition duration-300 text-xl sm:text-2xl"
+                span class="text-cyan transition duration-300 text-2xl sm:text-xl"
                   = post[:metadata][:title]
-                div class="text-orange text-lg sm:text-xl"
+                div class="text-orange text-xl sm:text-lg"
                   = post[:metadata][:date]
-              div class="font-sans"
+              div class="font-sans text-lg sm:text-base"
                 = post[:metadata][:summary]
