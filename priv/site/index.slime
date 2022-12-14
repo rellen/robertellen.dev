@@ -4,7 +4,7 @@ current: home
 ---
 
 h1.font-bold.py-4.text-center.text-purple class="text-2xl sm:text-3xl" Rob's Ramblings
-p.text-center.font-serif class="text-lg sm:text-xl" A tech blog by Robert Ellen 
+p.text-center.font-serif class="text-lg sm:text-xl" A tech blog by Robert Ellen
 
 .main
   = include(@env, "_includes/social.slime")
@@ -19,7 +19,7 @@ p.text-center.font-serif class="text-lg sm:text-xl" A tech blog by Robert Ellen
           li
             div.flex.justify-between
               = link @env, post[:metadata][:title], to: post[:output_file], class: "text-cyan hover:text-white transition duration-300 text-xl sm:text-2xl"
-              div.text-orange
+              div.text-orange class="text-lg sm:text-xl"
                 = post[:metadata][:date]
-            div.font-sans.text-justify
+            div.font-sans
               = post[:metadata][:summary]
