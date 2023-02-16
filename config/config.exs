@@ -19,7 +19,7 @@ config :still,
   output: Path.join(Path.dirname(__DIR__), "_site"),
   pass_through_copy: ["robots.txt", "favicon.ico"],
   url_fingerprinting: false,
-  ignore_files: ["assets"],
+  ignore_files: ["assets", ~r/undo\-tree/],
   watchers: [
     npx: [
       "tailwindcss",
