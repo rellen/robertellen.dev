@@ -1,6 +1,5 @@
 module.exports = {
-  purge: ["../../**/*.{slime,eex}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["../../**/*.{slime,eex}"],
   theme: {
     extend: {
         typography: ({ theme }) => ({
