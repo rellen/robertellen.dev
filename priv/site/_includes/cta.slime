@@ -1,7 +1,9 @@
-div.mt-6.bg-selection.text-center.px-8 class="text-base sm:text-lg py-1 sm:py-2"
-  div.flex.flex-row.mx-auto.justify-evenly.container
-    div.flex
-      span.my-auto
+div.mt-6.bg-bluegrey.text-center.px-8 class="text-base sm:text-lg py-1 sm:py-2"
+  div.flex.flex-col.mx-auto.justify-around.container
+    div.flex.justify-center
+      span.pt-1
         | Subscribe to the #{link @env, "RSS Feed", to: "rss.xml", class: "text-cyan hover:text-white transition duration-300 underline font-bold text-base sm:text-lg"}
-    div
-      = include(@env, "_includes/social.slime")
+    div.flex.flex-row.mx-auto.items-center
+      span.mr-4 Keep in touch
+      .py-2
+        = include(@env, "_includes/social.slime")

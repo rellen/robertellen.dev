@@ -51,6 +51,7 @@ module.exports = {
     colors: {
         'white': '#f8f8f2',
         'black': '#282a36',
+        'bluegrey': 'rgb(57, 59, 88)',
         'purple': '#bd93f9',
         'green': '#50fa7b',
         'cyan': '#8be9fd',

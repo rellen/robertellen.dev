@@ -3,12 +3,13 @@ layout: _includes/layout.slime
 current: home
 ---
 
-h1.font-bold.py-4.text-center.text-purple class="text-3xl sm:text-2xl" Rob's Ramblings
-p.text-center.font-serif class="text-xl sm:text-lg" A tech blog by Robert Ellen
+.bg-bluegrey
+  h1.font-bold.py-4.text-center.text-purple.font-serif class="text-6xl sm:text-4xl" Rob's Ramblings
+  p.text-center class="text-xl sm:text-lg" A tech blog by Robert Ellen
+  .py-4
+    = include(@env, "_includes/social.slime")
 
 .main
-  = include(@env, "_includes/social.slime")
-
   .mx-auto class="md:container p-6"
     .pt-4
       h2.text-xl.mb-6.tracking-wide.font-bold.text-purple class="sm:text-2xl"

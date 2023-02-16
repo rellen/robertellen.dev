@@ -2,7 +2,7 @@ footer.bg-black.text-center class="text-sm sm:text-xs py-2 sm:py-4"
   div#footer-content
       p
         span class="hidden sm:inline" Copyright &nbsp;
-        span.inline-block © 2021-2022 &nbsp;
+        span.inline-block © 2021-#{DateTime.utc_now.year} &nbsp;
         span.inline-block Robert Ellen
       p
         | Built using
