@@ -1,17 +1,20 @@
 { pkgs ? import <nixpkgs> { }, nixpkgs ? <nixpkgs> }:
 let
     inherit (pkgs.lib) optional optionals;
-    erlang = pkgs.beam.interpreters.erlangR25;
-    elixir = pkgs.beam.packages.erlangR25.elixir_1_14;
+    erlangR25 = pkgs.beam.interpreters.erlangR25;
+    elixir_1_14 = pkgs.beam.packages.erlangR25.elixir_1_14;
+    elixir_ls_1_14 =  pkgs.elixir_ls.override {
+      elixir = elixir_1_14;
+    };
 
 in pkgs.mkShell rec {
   name = "ssg-still";
   buildInputs = with pkgs; [
     rebar
     rebar3
-    erlang
-    elixir
-    elixir_ls
+    erlangR25
+    elixir_1_14
+    elixir_ls_1_14
     nodejs
    ] ++ optional stdenv.isLinux inotify-tools ++ optionals stdenv.isDarwin (with darwin.apple_sdk.frameworks; [ CoreFoundation CoreServices ]);
 
