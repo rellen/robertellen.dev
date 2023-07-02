@@ -28,7 +28,11 @@ defmodule RobertEllen.Dev.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:still, git: "https://github.com/still-ex/still", branch: "master", override: true}
+      # still
+      {:still, git: "https://github.com/still-ex/still", branch: "master", override: true},
+
+      # html
+      {:temple, "~> 0.12"}
     ]
   end
 end

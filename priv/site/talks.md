@@ -1,5 +1,5 @@
 ---
-layout: "_includes/post_layout.slime"
+layout: "_includes/talks_layout.temple"
 current: talks
 title: "Talks"
 ---

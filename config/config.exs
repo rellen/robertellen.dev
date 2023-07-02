@@ -11,6 +11,17 @@ alias Still.Preprocessor.{
   Image
 }
 
+content_before_preprocessors = [
+  AddContent,
+  Frontmatter
+]
+
+content_after_preprocessors = [
+  OutputPath,
+  AddLayout,
+  Save
+]
+
 config :still,
   domain: "http://localhost:3000",
   dev_layout: true,
@@ -34,7 +45,9 @@ config :still,
   ],
   preprocessors: %{
     ".xml" => [AddContent, EEx, RobertEllen.Dev.XMLPreprocessor, OutputPath, Save],
-    ".md" => [AddContent, EEx, Frontmatter, Markdown, RobertEllen.Dev.BlogPath, AddLayout, Save]
+    ".md" => [AddContent, EEx, Frontmatter, Markdown, RobertEllen.Dev.BlogPath, AddLayout, Save],
+    ".temple" =>
+      content_before_preprocessors ++ [RobertEllen.Dev.Temple] ++ content_after_preprocessors
   }
 
 import_config("#{Mix.env()}.exs")

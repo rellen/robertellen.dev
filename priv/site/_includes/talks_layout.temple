@@ -1,0 +1,24 @@
+---
+  layout: _includes/layout.slime
+---
+defmodule TalksLayout do
+  import Temple
+
+  def render(assigns) do
+    temple do
+      h1 class: "text-center py-4 font-bold text-purple text-2xl sm:text-3xl" do
+        @title
+      end
+      div class: "mx-auto py-8 px-4 container" do
+        article class: "prose max-w-none font-sans prose-lg sm:prose-base" do
+          Phoenix.HTML.raw(@children)
+        end
+      end
+      div class: "text-center" do
+        a href: "/", class: "text-cyan underline hover:underline" do
+          "Back Home"
+        end
+      end
+    end
+  end
+end
